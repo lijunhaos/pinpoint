@@ -695,6 +695,12 @@
             </dependency>
 
             <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>3.4.2</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-client</artifactId>
                 <version>5.13.2</version>
