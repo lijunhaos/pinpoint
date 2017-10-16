@@ -9,21 +9,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by yanwen on 16-7-8.
+ * Created by junhao on 17-10-16.
  */
 @Controller
 @RequestMapping("/x")
 public class SessionController {
 
     @RequestMapping("")
-    public String index(HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
         String authorization = request.getHeader("Authorization");
         if (!AuthUtils.isPassBasicAuth(authorization, "thisisusername", "thisispassword~")) {
             response.setHeader("WWW-Authenticate", "BASIC   realm=\"manage\"");
             response.setStatus(401);
             return null;
         } else {
-            return "redirect:/index.html";
+            return new ModelAndView("/index.html");
         }
     }
 }
