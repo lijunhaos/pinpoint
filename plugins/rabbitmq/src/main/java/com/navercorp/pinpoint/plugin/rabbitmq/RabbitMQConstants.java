@@ -16,10 +16,10 @@ public interface RabbitMQConstants {
     ServiceType RABBITMQ_SERVICE_TYPE = ServiceTypeFactory.of(8300, "RABBITMQ", TERMINAL, RECORD_STATISTICS);
     String RABBITMQ_SCOPE = "rabbitmqScope";
 
-    AnnotationKey RABBITMQ_EXCHANGE_ANNOTATION_KEY = AnnotationKeyFactory.of(100, "rabbitmq.exchange", VIEW_IN_RECORD_SET);
-    AnnotationKey RABBITMQ_ROUTINGKEY_ANNOTATION_KEY = AnnotationKeyFactory.of(101, "rabbitmq.routingkey", VIEW_IN_RECORD_SET);
-    AnnotationKey RABBITMQ_PROPERTIES_ANNOTATION_KEY = AnnotationKeyFactory.of(102, "rabbitmq.properties");
-    AnnotationKey RABBITMQ_BODY_ANNOTATION_KEY = AnnotationKeyFactory.of(103, "rabbitmq.body");
+    AnnotationKey RABBITMQ_EXCHANGE_ANNOTATION_KEY = AnnotationKeyFactory.of(150, "rabbitmq.exchange", VIEW_IN_RECORD_SET);
+    AnnotationKey RABBITMQ_ROUTINGKEY_ANNOTATION_KEY = AnnotationKeyFactory.of(151, "rabbitmq.routingkey", VIEW_IN_RECORD_SET);
+    AnnotationKey RABBITMQ_PROPERTIES_ANNOTATION_KEY = AnnotationKeyFactory.of(152, "rabbitmq.properties");
+    AnnotationKey RABBITMQ_BODY_ANNOTATION_KEY = AnnotationKeyFactory.of(153, "rabbitmq.body");
 
     String META_DO_NOT_TRACE = "_RABBITMQ_DO_NOT_TRACE";
     String META_TRANSACTION_ID = "_RABBITMQ_TRASACTION_ID";

@@ -67,4 +67,6 @@ public interface Trace extends StackOperation {
     TraceScope getScope(String name);
 
     TraceScope addScope(String name);
+
+    void updateAsContinueTraceObject(TraceId continueTraceId, long transactionId, boolean sampling);
 }

@@ -60,7 +60,7 @@ public abstract class AlarmChecker {
         return rule.isEmailSend();
     }
     
-    public String getuserGroupId() {
+    public String getUserGroupId() {
         return rule.getUserGroupId();
     }
     

@@ -81,10 +81,10 @@ import static com.navercorp.pinpoint.common.trace.AnnotationKeyProperty.*;
  * <tr><td>82</td><td>thrift.result</td></tr>
  * <tr><td>90</td><td>dubbo.args</td></tr>
  * <tr><td>91</td><td>dubbo.result</td></tr>
- * <tr><td>100</td><td>rabbitmq.properties</td></tr>
- * <tr><td>101</td><td>rabbitmq.body</td></tr>
- * <tr><td>102</td><td>rabbitmq.properties</td></tr>
- * <tr><td>103</td><td>rabbitmq.body</td></tr>
+ * <tr><td>150</td><td>rabbitmq.properties</td></tr>
+ * <tr><td>151</td><td>rabbitmq.body</td></tr>
+ * <tr><td>152</td><td>rabbitmq.properties</td></tr>
+ * <tr><td>153</td><td>rabbitmq.body</td></tr>
  * <tr><td>200</td><td>cxf.operation</td></tr>
  * <tr><td>201</td><td>cxf.args</td></tr>
  * <tr><td>9000</td><td>gson.json.length</td></tr>
