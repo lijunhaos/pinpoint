@@ -36,10 +36,10 @@ public final class EmailUtilService {
     public static final boolean myEmailDebug = true;
 
     // 邮件发件人名称
-    public static final String senders_name = "\\u6027\\u80fd\\u76d1\\u63a7";
+    public static final String senders_name = "\u6027\u80fd\u76d1\u63a7";
 
     //邮件主题
-    public static final String emailSubject = "\\u544a\\u8b66";
+    public static final String emailSubject = "\u544a\u8b66";
 
     /**
      * 发送单份邮件
