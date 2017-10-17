@@ -28,7 +28,7 @@ public class SmsSenderService {
       // 发送短信地址
       String url_send_sms = urlSendSms + "/sendSms";
       // 签名，签名内容根据 “短信内容+客户密码”进行MD5编码后获得
-      String sign = content + custPwd;
+      String sign = "[APM性能监控告警]" + content + "【MPS】" + custPwd;
       sign = Md5.getMd5(sign.getBytes("UTF-8"));
       com.alibaba.fastjson.JSONObject jsonObject = new com.alibaba.fastjson.JSONObject();
       jsonObject.put("cust_code", custCode);
