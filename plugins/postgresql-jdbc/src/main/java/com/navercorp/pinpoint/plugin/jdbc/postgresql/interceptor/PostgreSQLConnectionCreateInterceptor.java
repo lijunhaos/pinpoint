@@ -65,14 +65,13 @@ public class PostgreSQLConnectionCreateInterceptor implements AroundInterceptor 
         final Integer portToConnectTo = Integer.valueOf(properties.getProperty("PGPORT", DEFAULT_PORT));
 
         final String databaseId = properties.getProperty("PGDBNAME");
-        logger.info("host:{}----------------------------->port:{}------------------------>name:{}",hostToConnectTo,portToConnectTo,databaseId);
+
         // In case of loadbalance, connectUrl is modified.
         // final String url = getString(args[4]);
         DatabaseInfo databaseInfo = null;
         if (hostToConnectTo != null && portToConnectTo != null && databaseId != null) {
             // It's dangerous to use this url directly
             databaseInfo = createDatabaseInfo(hostToConnectTo, portToConnectTo, databaseId);
-            logger.info("数据库链接的详细信息------------------------------》{}",databaseInfo);
             if (InterceptorUtils.isSuccess(throwable)) {
                 // Set only if connection is success.
                 if (target instanceof DatabaseInfoAccessor) {
